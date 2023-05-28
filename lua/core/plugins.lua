@@ -25,6 +25,12 @@ return require('packer').startup(function(use)
   }
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'tpope/vim-fugitive'
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
