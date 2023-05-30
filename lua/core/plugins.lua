@@ -18,6 +18,14 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+
+  -- LSP
+  use {
+    "williamboman/mason.nvim",
+    "neovim/nvim-lspconfig",
+    "williamboman/mason-lspconfig.nvim",
+  }
+
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
@@ -31,7 +39,6 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
   }
-
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
