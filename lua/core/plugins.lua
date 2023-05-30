@@ -12,6 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+  {
+    'kdheepak/lazygit.nvim',
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+    },
+  },
   'wbthomason/packer.nvim',
   'ellisonleao/gruvbox.nvim',
   'rebelot/kanagawa.nvim',
@@ -51,7 +57,15 @@ local plugins = {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
+  },
+
+  -- Buffer line
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-web-devicons',
   }
+
 }
 
 local opts = {}
