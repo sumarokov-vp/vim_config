@@ -25,8 +25,20 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
+  -- Tree
+  --
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
+  {
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  },
+
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
   'bluz71/vim-nightfly-colors',
