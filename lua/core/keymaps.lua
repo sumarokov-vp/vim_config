@@ -9,4 +9,4 @@ vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('i', 'kk', '<Esc>')
 vim.keymap.set('i', 'jk', '<Esc>')
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>/', ':nohlsearch<CR>')

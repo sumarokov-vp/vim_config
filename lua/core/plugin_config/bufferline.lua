@@ -1,6 +1,6 @@
 vim.opt.termguicolors = true
 require("bufferline").setup{}
 
-vim.keymap.set('n', '<leader>h', ':BufferLineCyclePrev<CR>')
-vim.keymap.set('n', '<leader>l', ':BufferLineCycleNext<CR>')
-vim.keymap.set('n', '<leader>w', ':w<CR> :BufferLineCyclePrev<CR> :BufferLineCloseRight<CR>')
+vim.keymap.set('n', '<leader>h', ':bprevious<CR>')
+vim.keymap.set('n', '<leader>l', ':bnext<CR>')
+vim.keymap.set('n', '<leader>w', ':w<CR> :bdelete<CR>')
