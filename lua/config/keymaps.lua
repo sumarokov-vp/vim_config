@@ -5,7 +5,6 @@ vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
 vim.keymap.set("i", "jk", "<Esc>")
 
-vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>", { desc = "Clear search" })
 vim.keymap.set("n", "<leader>o", ":Neotree focus<CR>", { desc = "Neotree focus" })
 
 vim.keymap.set("n", "<leader>w", ":w<CR> :bdelete<CR>")
