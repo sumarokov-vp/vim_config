@@ -7,4 +7,6 @@ vim.keymap.set("i", "jk", "<Esc>")
 
 vim.keymap.set("n", "<leader>o", ":Neotree focus<CR>", { desc = "Neotree focus" })
 
-vim.keymap.set("n", "<leader>w", ":w<CR> :bdelete<CR>")
+vim.keymap.set("n", "<leader>d", function()
+  require("mini.bufremove").delete(0, false)
+end, { desc = "Delete Buffer" })
